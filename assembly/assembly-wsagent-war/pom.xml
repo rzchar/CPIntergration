@@ -20,19 +20,12 @@
     <packaging>war</packaging>
     <name>Project 5 Che :: Che Assembly :: Workspace Agent Assembly</name>
     <dependencies>
-        <dependency>
-            <groupId>org.eclipse.che</groupId>
-            <artifactId>assembly-wsagent-war</artifactId>
-            <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>edu.tongji.sse.qyd</groupId>
-            <artifactId>plugin-recommender-sample-server</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
-            <artifactId>plugin-intelligent-management-center-server</artifactId>
-        </dependency>
+        <!-- add your server plugin as dependency-->
+       <dependency>
+           <groupId>org.eclipse.che</groupId>
+           <artifactId>assembly-wsagent-war</artifactId>
+           <type>war</type>
+       </dependency>
     </dependencies>
     <build>
         <plugins>
