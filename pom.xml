@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2012-2018 Red Hat, Inc.
+    This program and the accompanying materials are made
+    available under the terms of the Eclipse Public License 2.0
+    which is available at https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>maven-depmgt-pom</artifactId>
+        <groupId>org.eclipse.che.depmgt</groupId>
+        <version>6.16.0</version>
+    </parent>
+    <groupId>edu.tongji.sse.project5</groupId>
+    <artifactId>plugin-project5-root</artifactId>
+    <version>6.16.0</version>
+    <packaging>pom</packaging>
+    <name>QYD Che :: Parent pom</name>
+    <licenses>
+        <license>
+            <name>Eclipse Public License 2.0</name>
+            <url>https://www.eclipse.org/legal/epl-2.0/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <properties>
+        <che.version>6.16.0</che.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-ide-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-wsagent-server</artifactId>
+                <version>${project.version}</version>
+                <type>tar.gz</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-wsagent-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <artifactId>plugin-intelligent-management-center-ide</artifactId>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <artifactId>plugin-intelligent-management-center-ide</artifactId>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.qyd</groupId>
+                <artifactId>plugin-recommender-sample-ide</artifactId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.qyd</groupId>
+                <artifactId>plugin-recommender-sample-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <artifactId>plugin-intelligent-management-center-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <artifactId>plugin-intelligent-management-center-server</artifactId>
+                <version>0.0.1</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.qyd</groupId>
+                <artifactId>plugin-recommender-sample-server</artifactId>
+                <version>0.0.1</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.che</groupId>
+                <artifactId>che-parent</artifactId>
+                <version>${che.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20180130</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jdt</groupId>
+                <artifactId>org.eclipse.jdt.core</artifactId>
+                <version>3.16.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <name>central public snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <!-- Configuration for launching GWT Super DevMode -->
+                <groupId>net.ltgt.gwt.maven</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <inherited>false</inherited>
+                <configuration>
+                    <projects>assembly-ide-war</projects>
+                    <codeserverArgs>
+                        <arg>-noprecompile</arg>
+                        <arg>-noincremental</arg>
+                    </codeserverArgs>
+                    <jvmArgs>
+                        <arg>${gwt.compiler.jvmArgs.Xss}</arg>
+                        <arg>${gwt.compiler.jvmArgs.Xmx}</arg>
+                    </jvmArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*.*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.code.sortpom</groupId>
+                <artifactId>maven-sortpom-plugin</artifactId>
+                <version>${version.sortpom.plugin}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>ossrh</id>
+            <name>central public snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <profiles>
+        <profile>
+            <id>sdm-in-che</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>net.ltgt.gwt.maven</groupId>
+                        <artifactId>gwt-maven-plugin</artifactId>
+                        <configuration>
+                            <codeserverArgs combine.children="append">
+                                <!-- CodeServer launched inside a container must be reachable at host machine -->
+                                <arg>-bindAddress</arg>
+                                <arg>0.0.0.0</arg>
+                            </codeserverArgs>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+  <modules>
+    <module>plugins</module>
+    <module>assembly</module>
+  </modules>
+</project>
