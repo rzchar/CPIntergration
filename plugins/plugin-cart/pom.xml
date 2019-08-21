@@ -19,9 +19,9 @@
     </parent>
     <groupId>edu.pku.sei.wusj</groupId>
     <artifactId>plugin-cart-parent</artifactId>
-        <packaging>pom</packaging>
-        <name>Plugin Cart :: Plugin Cart :: Parent</name>
-        <modules>
-            <module>plugin-cart-ide</module>
-        </modules>
+    <packaging>pom</packaging>
+    <name>Plugin Cart :: Plugin Cart :: Parent</name>
+    <modules>
+        <module>plugin-cart-ide</module>
+    </modules>
 </project>
