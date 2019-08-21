@@ -2,6 +2,9 @@
 
 ## Status
 - [x] PKU Cart
+- [x] FDU CLDIFF
+- [x] FDU CodeWisdom
+
 
 ## Build
 
