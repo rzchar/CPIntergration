@@ -21,6 +21,14 @@
     <name>Project 5 Che :: Che Assembly :: Workspace Agent Assembly</name>
     <dependencies>
         <!-- add your server plugin as dependency-->
+        <dependency>
+            <groupId>edu.fdu.se.ly</groupId>
+            <artifactId>plugin-code-recommendation-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+            <artifactId>plugin-intelligent-management-center-server</artifactId>
+        </dependency>
        <dependency>
            <groupId>org.eclipse.che</groupId>
            <artifactId>assembly-wsagent-war</artifactId>

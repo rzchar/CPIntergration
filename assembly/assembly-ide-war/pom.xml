@@ -31,6 +31,22 @@
             <type>gwt-lib</type>
         </dependency>
         <dependency>
+            <groupId>edu.fdu.se.ly</groupId>
+            <artifactId>plugin-code-recommendation-ide</artifactId>
+            <type>gwt-lib</type>
+        </dependency>
+        <dependency>
+            <artifactId>plugin-intelligent-management-center-ide</artifactId>
+            <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+            <type>gwt-lib</type>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.che.plugin</groupId>
+            <artifactId>che-plugin-git-ext-git</artifactId>
+            <version>${project.version}</version>
+            <type>gwt-lib</type>
+        </dependency>
+        <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-dev</artifactId>
         </dependency>

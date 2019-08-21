@@ -26,7 +26,7 @@ public class ApiRecommendatorViewPresenter extends BasePresenter
     implements ApiRecommendatorView.ActionDelegate {
 
   private final ApiRecommendatorView apiRecommendatorView;
-  private final String url = "http://localhost:9090/api/index.jsp";
+  private final String url = "http://162.105.88.99:9090/api/index.jsp";
   private final EditorAgent editorAgent;
   private String queryContent;
 

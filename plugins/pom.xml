@@ -23,5 +23,8 @@
     <!-- add your modules -->
     <modules>
         <module>plugin-cart</module>
+        <module>plugin-code-recommendation</module>
+        <module>plugin-intelligent-management-center</module>
+        <module>plugin-git</module>
     </modules>
 </project>
