@@ -136,14 +136,18 @@ final class CompareViewImpl extends Window implements CompareView {
     this.commitID2 = rightTitle;
     this.projectName = cldiffTitle;
 
+    String hostName = com.google.gwt.user.client.Window.Location.getHostName();
     comparePanel.setUrl(
-        "http://localhost:8088/CLDIFF-WEB/indexche.html"
+        "http://"
+            + hostName
+            + ":8080/CLDIFF-WEB/indexche.html"
             + "?commit1="
             + commitID1
             + "&commit2="
             + commitID2
             + "&project="
             + projectName);
+    comparePanel.getElement().setAttribute("frameborder", "no");
   }
 
   @Override
