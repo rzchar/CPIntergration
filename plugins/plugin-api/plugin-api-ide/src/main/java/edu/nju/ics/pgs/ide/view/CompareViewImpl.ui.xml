@@ -1,0 +1,108 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style>
+
+        @eval outputBackgroundColor org.eclipse.che.ide.api.theme.Style.theme.outputBackgroundColor();
+
+        .detailPanel{
+            width: 100%;
+        }
+
+        .scrollPanel {
+            width: 100%;
+            height: 100%;
+            /*background-color: white;*/
+        }
+
+        .mainPanel{
+            width: 1200px;
+        }
+
+        .somainPanel{
+            width: 100%;
+
+        }
+
+        .overviewPanel {
+            width: 100%;
+            overflow: hidden;
+            background-color: #555;
+
+        }
+
+        .comparePanel {
+            float: left;
+            width: 49.8%;
+            height: 100%;
+            border-style: solid;
+            border-color: gray;
+            border-top-width: 0px;
+            border-right-width: 1px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+        }
+
+        .stackOverflowPanel{
+            float: left;
+            width: 49.8%;
+            height: 98%;
+            /*border-style: solid;*/
+            /*border-color: gray;*/
+            /*border-top-width: 0px;*/
+            /*border-right-width: 0px;*/
+            /*border-bottom-width: 0px;*/
+            /*border-left-width: 1px;*/
+        }
+
+        .fileinfo {
+            float: left;
+            margin: 3px;
+            color: #AAA;
+        }
+
+        .button {
+            float: right;
+            height: 25px;
+            padding: 3px;
+            margin: 3px;
+            /*background-color: black;*/
+            /*color: #eeeeee;*/
+        }
+
+
+
+    </ui:style>
+
+    <g:FlowPanel addStyleNames="{style.detailPanel}">
+        <g:FlowPanel addStyleNames="{style.comparePanel}">
+            <g:FlowPanel ui:field="overviewPanel" addStyleNames="{style.overviewPanel}">
+                <g:FlowPanel ui:field="fileInfo" addStyleNames="{style.fileinfo}">
+
+                </g:FlowPanel>
+                <g:Button ui:field="confirmButton" addStyleNames="{style.button}">
+
+                </g:Button>
+            </g:FlowPanel>
+            <g:ScrollPanel ui:field="scrollPanel" addStyleNames="{style.scrollPanel}">
+                <g:FlowPanel ui:field="mainPanel" addStyleNames="{style.mainPanel}">
+
+                </g:FlowPanel>
+            </g:ScrollPanel>
+        </g:FlowPanel>
+        <g:FlowPanel addStyleNames="{style.stackOverflowPanel}">
+            <g:FlowPanel ui:field="so_overviewPanel" addStyleNames="{style.overviewPanel}">
+                <g:FlowPanel ui:field="so_Info" addStyleNames="{style.fileinfo}">
+
+                </g:FlowPanel>
+            </g:FlowPanel>
+            <g:ScrollPanel ui:field="so_scrollPanel" addStyleNames="{style.scrollPanel}">
+                <g:FlowPanel ui:field="so_mainPanel" addStyleNames="{style.somainPanel}">
+
+                </g:FlowPanel>
+            </g:ScrollPanel>
+        </g:FlowPanel>
+    </g:FlowPanel>
+
+
+</ui:UiBinder>

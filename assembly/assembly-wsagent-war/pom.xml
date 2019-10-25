@@ -26,6 +26,10 @@
             <artifactId>plugin-code-recommendation-server</artifactId>
         </dependency>
         <dependency>
+            <groupId>edu.nju.ics.pgs</groupId>
+            <artifactId>plugin-api-server</artifactId>
+        </dependency>
+        <dependency>
             <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
             <artifactId>plugin-intelligent-management-center-server</artifactId>
         </dependency>

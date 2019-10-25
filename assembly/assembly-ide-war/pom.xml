@@ -31,6 +31,11 @@
             <type>gwt-lib</type>
         </dependency>
         <dependency>
+            <groupId>edu.nju.ics.pgs</groupId>
+            <artifactId>plugin-api-ide</artifactId>
+            <type>gwt-lib</type>
+        </dependency>
+        <dependency>
             <groupId>edu.fdu.se.ly</groupId>
             <artifactId>plugin-code-recommendation-ide</artifactId>
             <type>gwt-lib</type>

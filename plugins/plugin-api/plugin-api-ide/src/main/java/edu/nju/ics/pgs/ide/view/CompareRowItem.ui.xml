@@ -1,0 +1,99 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style type="edu.nju.ics.pgs.ide.view.CompareRowItem.CompareRowStyle">
+
+        @eval outputBackgroundColor org.eclipse.che.ide.api.theme.Style.theme.outputBackgroundColor();
+
+        .add{
+            width: 1080px;
+            background-color: #CFC;
+            color: black;
+            float: left;
+        }
+
+        .remove{
+            width: 1080px;
+            background-color: #FEE;
+            color: black;
+            float: left;
+        }
+
+        .comment{
+            width: 1080px;
+            background-color: #EEF;
+            color: #888888;
+            float: left;
+        }
+
+        .normal{
+            width: 1080px;
+            color: #CCC;
+            float: left;
+        }
+
+        .normalLineNumber{
+            float: left;
+            width: 50px;
+            color: #CCC;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .addLineNumber{
+            float: left;
+            width: 50px;
+            color: #333;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #AEA;
+            text-align: right;
+        }
+
+        .removeLineNumber{
+            float: left;
+            width: 50px;
+            color: #AAA;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #FCC;
+            text-align: right;
+        }
+
+        .commentLineNumber{
+            float: left;
+            width: 50px;
+            color: #AAA;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #CCF;
+            text-align: right;
+        }
+
+    </ui:style>
+
+
+    <g:FlowPanel>
+        <g:FlowPanel ui:field="linenumber">
+            <!--<g:FlowPanel ui:field="lineleft">-->
+
+            <!--</g:FlowPanel>-->
+            <!--<g:FlowPanel ui:field="linenumber">-->
+
+            <!--</g:FlowPanel>-->
+            <!--<g:FlowPanel>-->
+
+            <!--</g:FlowPanel>-->
+        </g:FlowPanel>
+        <g:FlowPanel ui:field="compareRowPanel">
+            <!--<g:FlowPanel>-->
+
+            <!--</g:FlowPanel>-->
+        </g:FlowPanel>
+    </g:FlowPanel>
+
+
+
+
+</ui:UiBinder>

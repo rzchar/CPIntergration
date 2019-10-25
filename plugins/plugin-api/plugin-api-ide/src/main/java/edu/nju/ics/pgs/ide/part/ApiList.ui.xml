@@ -1,0 +1,31 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style>
+
+        @eval outputBackgroundColor org.eclipse.che.ide.api.theme.Style.theme.outputBackgroundColor();
+
+        .selectPanel {
+            width: 94%;
+            margin: 3%;
+        }
+
+        .selectList{
+            display: block;
+            width: 100%;
+        }
+    </ui:style>
+
+
+    <g:FlowPanel ui:field="resultItemPanel" styleName="{style.selectPanel}">
+        <g:FlowPanel ui:field="descriptionPanel">
+
+        </g:FlowPanel>
+        <g:ListBox ui:field="listBox" styleName="{style.selectList}}">
+
+        </g:ListBox>
+    </g:FlowPanel>
+
+
+
+</ui:UiBinder>
