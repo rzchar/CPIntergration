@@ -86,6 +86,23 @@
                <type>jar</type>
            </dependency>
            <dependency>
+               <groupId>edu.nju.ics.pgs</groupId>
+               <artifactId>plugin-api-ide</artifactId>
+               <version>0.0.1</version>
+               <type>gwt-lib</type>
+           </dependency>
+           <dependency>
+               <groupId>edu.nju.ics.pgs</groupId>
+               <artifactId>plugin-api-server</artifactId>
+               <version>0.0.1</version>
+           </dependency>
+           <dependency>
+               <groupId>edu.nju.ics.pgs</groupId>
+               <artifactId>plugin-pgs-server</artifactId>
+               <version>0.0.1</version>
+               <type>jar</type>
+           </dependency>
+           <dependency>
                <groupId>edu.tongji.sse.project5</groupId>
                <artifactId>assembly-ide-war</artifactId>
                <version>${project.version}</version>

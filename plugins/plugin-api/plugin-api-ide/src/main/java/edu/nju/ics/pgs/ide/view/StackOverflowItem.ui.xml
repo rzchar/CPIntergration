@@ -1,0 +1,42 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style>
+
+        @eval outputBackgroundColor org.eclipse.che.ide.api.theme.Style.theme.outputBackgroundColor();
+        .result{
+            background-color:#DDD;
+            width: 96%;
+            margin: 1%;
+            padding: 1%;
+            white-space:normal;
+            word-break:break-all;
+            word-wrap:break-word;
+            border-radius:15px;
+        }
+        .title{
+            color: #333;
+            font-size: 1em;
+        }
+        .excerpt{
+            color: #888;
+            font-size: 0.8em;
+            white-space:normal;
+            word-break:break-all;
+            word-wrap:break-word;
+        }
+    </ui:style>
+
+    <g:FlowPanel addStyleNames="{style.result}">
+        <g:FlowPanel>
+            <g:Anchor ui:field="titlePanel" addStyleNames="{style.title}">
+
+            </g:Anchor>
+        </g:FlowPanel>
+        <g:FlowPanel ui:field="excerptPanel" addStyleNames="{style.excerpt}">
+
+        </g:FlowPanel>
+    </g:FlowPanel>
+
+
+</ui:UiBinder>
