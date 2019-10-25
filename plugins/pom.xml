@@ -26,5 +26,6 @@
         <module>plugin-code-recommendation</module>
         <module>plugin-intelligent-management-center</module>
         <module>plugin-git</module>
+        <module>plugin-api</module>
     </modules>
 </project>
