@@ -27,5 +27,6 @@
         <module>plugin-intelligent-management-center</module>
         <module>plugin-git</module>
         <module>plugin-api</module>
+        <module>plugin-mlb</module>
     </modules>
 </project>

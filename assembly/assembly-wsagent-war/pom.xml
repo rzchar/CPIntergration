@@ -30,6 +30,10 @@
             <artifactId>plugin-api-server</artifactId>
         </dependency>
         <dependency>
+            <groupId>edu.nju.seg.mlb</groupId>
+            <artifactId>plugin-mlb-server</artifactId>
+        </dependency>
+        <dependency>
             <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
             <artifactId>plugin-intelligent-management-center-server</artifactId>
         </dependency>

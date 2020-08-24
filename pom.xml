@@ -9,7 +9,8 @@
     SPDX-License-Identifier: EPL-2.0
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
@@ -33,93 +34,92 @@
     </properties>
     <dependencyManagement>
         <!-- add dependency management for your plugin here.-->
-       <dependencies>
-           <dependency>
-               <groupId>edu.pku.sei.wusj</groupId>
-               <artifactId>plugin-cart-ide</artifactId>
-               <version>${project.version}</version>
-               <type>gwt-lib</type>
-           </dependency>
-           <dependency>
-               <groupId>org.eclipse.che.plugin</groupId>
-               <artifactId>che-plugin-git-ext-git</artifactId>
-               <version>${project.version}</version>
-               <type>gwt-lib</type>
-           </dependency>
-           <dependency>
-               <artifactId>plugin-intelligent-management-center-ide</artifactId>
-               <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
-               <version>0.0.1</version>
-               <type>gwt-lib</type>
-           </dependency>
-           <dependency>
-               <artifactId>plugin-intelligent-management-center-ide</artifactId>
-               <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
-               <version>0.0.1</version>
-           </dependency>
-           <dependency>
-               <groupId>edu.fdu.se.ly</groupId>
-               <artifactId>plugin-code-recommendation-ide</artifactId>
-               <version>0.0.1</version>
-               <type>gwt-lib</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.fdu.se.ly</groupId>
-               <artifactId>plugin-code-recommendation-server</artifactId>
-               <version>0.0.1</version>
-           </dependency>
-           <dependency>
-               <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
-               <artifactId>plugin-intelligent-management-center-server</artifactId>
-               <version>0.0.1</version>
-           </dependency>
-           <dependency>
-               <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
-               <artifactId>plugin-intelligent-management-center-server</artifactId>
-               <version>0.0.1</version>
-               <type>jar</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.fdu.se.ly</groupId>
-               <artifactId>plugin-code-recommendation-server</artifactId>
-               <version>0.0.1</version>
-               <type>jar</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.nju.ics.pgs</groupId>
-               <artifactId>plugin-api-ide</artifactId>
-               <version>0.0.1</version>
-               <type>gwt-lib</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.nju.ics.pgs</groupId>
-               <artifactId>plugin-api-server</artifactId>
-               <version>0.0.1</version>
-           </dependency>
-           <dependency>
-               <groupId>edu.nju.ics.pgs</groupId>
-               <artifactId>plugin-pgs-server</artifactId>
-               <version>0.0.1</version>
-               <type>jar</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.tongji.sse.project5</groupId>
-               <artifactId>assembly-ide-war</artifactId>
-               <version>${project.version}</version>
-               <type>war</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.tongji.sse.project5</groupId>
-               <artifactId>assembly-wsagent-server</artifactId>
-               <version>${project.version}</version>
-               <type>tar.gz</type>
-           </dependency>
-           <dependency>
-               <groupId>edu.tongji.sse.project5</groupId>
-               <artifactId>assembly-wsagent-war</artifactId>
-               <version>${project.version}</version>
-               <type>war</type>
-           </dependency>
+        <dependencies>
+            <dependency>
+                <groupId>edu.pku.sei.wusj</groupId>
+                <artifactId>plugin-cart-ide</artifactId>
+                <version>${project.version}</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.che.plugin</groupId>
+                <artifactId>che-plugin-git-ext-git</artifactId>
+                <version>${project.version}</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <artifactId>plugin-intelligent-management-center-ide</artifactId>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <artifactId>plugin-intelligent-management-center-ide</artifactId>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.fdu.se.ly</groupId>
+                <artifactId>plugin-code-recommendation-ide</artifactId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.fdu.se.ly</groupId>
+                <artifactId>plugin-code-recommendation-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.intelligentmanagementcenter</groupId>
+                <artifactId>plugin-intelligent-management-center-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.nju.ics.pgs</groupId>
+                <artifactId>plugin-api-ide</artifactId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.nju.ics.pgs</groupId>
+                <artifactId>plugin-api-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.nju.ics.pgs</groupId>
+                <artifactId>plugin-pgs-server</artifactId>
+                <version>0.0.1</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.nju.seg.mlb</groupId>
+                <artifactId>plugin-mlb-ide</artifactId>
+                <version>0.0.1</version>
+                <type>gwt-lib</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.nju.seg.mlb</groupId>
+                <artifactId>plugin-mlb-server</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-ide-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-wsagent-server</artifactId>
+                <version>${project.version}</version>
+                <type>tar.gz</type>
+            </dependency>
+            <dependency>
+                <groupId>edu.tongji.sse.project5</groupId>
+                <artifactId>assembly-wsagent-war</artifactId>
+                <version>${project.version}</version>
+                <type>war</type>
+            </dependency>
             <dependency>
                 <groupId>org.eclipse.che</groupId>
                 <artifactId>che-parent</artifactId>
@@ -163,6 +163,7 @@
                         <arg>${gwt.compiler.jvmArgs.Xss}</arg>
                         <arg>${gwt.compiler.jvmArgs.Xmx}</arg>
                     </jvmArgs>
+                    <moduleName/>
                 </configuration>
             </plugin>
             <plugin>
@@ -211,8 +212,8 @@
             </build>
         </profile>
     </profiles>
-  <modules>
-    <module>plugins</module>
-    <module>assembly</module>
-  </modules>
+    <modules>
+        <module>plugins</module>
+        <module>assembly</module>
+    </modules>
 </project>
