@@ -50,7 +50,7 @@ public class MyService {
   private String sendInputStream(URL url, InputStream inputStream, String projectPath)
       throws IOException, ConflictException, NotFoundException, ServerException {
     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-    int timeout = 30000; // 1,000 ms = 1 s
+    int timeout = 600000; // 1,000 ms = 1 s
 
     // 设置
     conn.setDoOutput(true);
