@@ -4,6 +4,8 @@
 - [x] PKU Cart
 - [x] FDU CLDIFF
 - [x] FDU CodeWisdom
+- [X] NJU PGS
+- [X] NJU MLB
 
 
 ## Build

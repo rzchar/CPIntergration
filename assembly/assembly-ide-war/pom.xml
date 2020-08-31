@@ -36,6 +36,11 @@
             <type>gwt-lib</type>
         </dependency>
         <dependency>
+            <groupId>edu.nju.seg.mlb</groupId>
+            <artifactId>plugin-mlb-ide</artifactId>
+            <type>gwt-lib</type>
+        </dependency>
+        <dependency>
             <groupId>edu.fdu.se.ly</groupId>
             <artifactId>plugin-code-recommendation-ide</artifactId>
             <type>gwt-lib</type>
